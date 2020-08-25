@@ -10,7 +10,12 @@ public class CustomerMain {
 //        System.out.println(peter);
 //        System.out.println(nancy);
 //        System.out.println(peter.checkPin("1234"));
-        Bank bank = new Bank("My Bank");
+
+        // can choose from DB or WS
+            // DB
+//        Bank bank = new Bank("My Bank",new DatabaseDataSource());
+            // WS
+        Bank bank = new Bank("My Bank",new WebServiceDatasource());
         bank.addCustomer(peter);
         bank.addCustomer(nancy);
 
