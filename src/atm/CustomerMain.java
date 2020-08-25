@@ -13,6 +13,8 @@ public class CustomerMain {
         Bank bank = new Bank("My Bank");
         bank.addCustomer(peter);
         bank.addCustomer(nancy);
+
+        System.out.println(bank);
 //        Customer c1 = bank.findCustomer(1);
 //        Customer c80 = bank.findCustomer(80);
 //        System.out.println(c1);

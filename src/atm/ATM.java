@@ -33,4 +33,11 @@ public class ATM {
         currentCustomer = null;
     }
 
+    @Override
+    public String toString() {
+        return "ATM{" +
+                "bank=" + bank +
+                ", currentCustomer=" + currentCustomer +
+                '}';
+    }
 }
