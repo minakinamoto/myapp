@@ -6,7 +6,7 @@ public class Customer {
     private int id;
     private String name;
     private String pin;
-    //     1.2 composition
+    //     1.2 composition : "Has-A" Relationship
     private BankAccount account;
 
     public Customer(int id, String name, String pin) {
@@ -16,19 +16,32 @@ public class Customer {
         this.account = new BankAccount(id,name,"Saving");
     }
 
+    public boolean checkPin(String pin){
+//        if (this.pin.equals(pin))
+//            return true;
+//        else
+//            return false;      // [long version]
+        return this.pin.equals(pin); // [short version]
+
+    }
+
     public int getId() {
+
         return id;
     }
 
     public String getName() {
+
         return name;
     }
 
     public BankAccount getAccount() {
+
         return account;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
